@@ -7,7 +7,7 @@ import java.util.Scanner;
 import entity.Aluno;
 import entity.Endereco;
 
-public class Main {
+public class AlunoApp {
 	
 	public static void main(String[] args) {
 		
@@ -27,7 +27,7 @@ public class Main {
 		int n = sc.nextInt();
 		
 		for (int i = 1; i<=n; i++) {
-			System.out.println("Digite os dados do Aluno número " + i);
+			System.out.println("Digite os dados do Aluno número: " + i);
 			System.out.print("Código do aluno: ");
 			long idAluno = sc.nextLong();
 			System.out.print("Nome: ");
@@ -41,7 +41,7 @@ public class Main {
 				alunos.add(new Aluno(idAluno, nome, email));
 			}
 			else {
-				System.out.println("Digite os dados do endereço do aluno:" + i);
+				System.out.println("Digite o endereço do aluno número: " + i);
 				System.out.print("Digite o código do endereco: ");
 				long idEndereco = sc.nextLong();
 				System.out.print("Bairro: ");
